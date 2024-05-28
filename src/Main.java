@@ -17,7 +17,7 @@ public class Main {
         }
 
         for (int d = 1904; d <= 2096; d = d + 4){
-            System.out.println("Високосный год " + d);
+            System.out.println(d + " год является високосным");
         }
 
         for (int e = 7; e <= 98; e = e + 7){
@@ -29,11 +29,11 @@ public class Main {
         }
 
 
-        int money = 0;
-        int totalMoney = 0;
+        double totalMoney = 0;
+        double rate = 0.12;
         for (int g = 1; g <= 12; g++){
-            money = money + (29000);
-            totalMoney = money + (money/100);
+            double interest = totalMoney * rate/12;
+            totalMoney = totalMoney + 29000 + interest;
             System.out.println("Месяц " + g + " сумма накоплений равна " + totalMoney + " рублей");
         }
 
